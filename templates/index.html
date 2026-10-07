@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect</title> <!--title -->
+</head>
+
+<body>
+
+    <h1>CampusConnect</h1>
+
+    <h2>Ask a Question</h2>
+
+    <form action="/create-post" method="POST">
+
+        <label>Title</label>
+        <br>
+        <input type="text" name="title" required> <!--required makes it so that u can't leave it empty  -->
+
+        <br><br>
+
+        <label>Topic</label>
+        <br>
+        <select name="topic" required>
+            <option value="DSA">DSA</option>
+            <option value="Web Development">Web Development</option>
+            <option value="AI/ML">AI/ML</option>
+            <option value="Hackathons">Hackathons</option>
+            <option value="Internships">Internships</option>
+        </select>
+
+        <br><br>
+
+        <label>Question</label>
+        <br>
+        <textarea name="content" rows="6" required></textarea>
+
+        <br><br>
+
+        <button type="submit">Post Question</button>
+
+    </form>
+
+</body>
+</html>
